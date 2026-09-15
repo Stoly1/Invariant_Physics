@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ru" class="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Основные понятия кинематики — INVARIANT</title>
+<link rel="stylesheet" href="../../assets/fonts.css">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="icon" href="../../assets/img/logo-mark.png">
+<link rel="apple-touch-icon" href="../../assets/img/logo-mark.png">
+<meta name="theme-color" content="#0d1330">
+</head>
+<body>
+<header class="topbar">
+<button class="icon-btn menu-btn" id="menu-btn" aria-label="Открыть список тем" aria-expanded="false">☰</button>
+<a class="brand" href="../../index.html">
+  <img class="brand-logo" src="../../assets/img/logo-mark.png" alt="" width="34" height="34">
+  <span class="brand-text">INVARIANT<span class="brand-sub">Физика</span></span>
+</a>
+<div class="topbar-right">
+<button class="icon-btn" id="theme-btn" aria-label="Сменить оформление">◐</button>
+</div>
+</header>
+<div class="shell">
+<nav class="sidebar" id="sidebar" aria-label="Разделы">
+<div class="nav-inner">
+<label class="search-box">
+  <span class="search-icon" aria-hidden="true">⌕</span>
+  <input type="search" id="nav-search" placeholder="Поиск по темам" autocomplete="off" aria-label="Поиск по темам">
+</label>
+<div id="nav-list"><div class="nav-group"><h3>Кинематика</h3><ul><li><a href="../../t/kinematika/osnovnye-ponyatiya.html" class="active">Основные понятия кинематики</a></li><li><a href="../../t/kinematika/srednyaya-skorost.html">Равномерное движение и средняя скорость</a></li><li><a href="../../t/kinematika/ravnouskorennoe-dvizhenie.html">Равноускоренное движение</a></li><li><a href="../../t/kinematika/svobodnoe-padenie-i-krivolineynoe-dvizhenie.html">Свободное падение и криволинейное движение</a></li></ul></div></div>
+<p class="nav-empty" id="nav-empty" hidden>Ничего не нашлось</p>
+</div>
+</nav>
+<main class="content">
+<article class="topic">
+<p class="eyebrow">Кинематика</p>
+<h1>Основные понятия кинематики</h1>
+<p class="lede">Механическое движение, материальная точка, система отсчёта, траектория, путь и перемещение.</p>
+<section class="theory"><h3 id="mehanika-i-kinematika">Механика и кинематика</h3><p><strong>Механика</strong> — раздел физики, изучающий движение тел.</p><p><strong>Кинематика</strong> — раздел механики, в котором движение тел рассматривается <strong>без выяснения причин</strong> этого движения.</p><p>То есть в кинематике мы отвечаем на вопрос «как движется тело» — где оно, с какой скоростью, по какой траектории. Вопрос «почему оно так движется» (какие силы действуют) — это уже динамика, следующий раздел.</p><h3 id="mehanicheskoe-dvizhenie">Механическое движение</h3><p><strong>Механическое движение</strong> — изменение положения тела в пространстве и времени относительно других тел.</p><p>Ключевые слова здесь — <strong>относительно других тел</strong>. Движение не бывает «вообще», оно всегда относительно чего-то.</p><aside class="note"><p>Ты сидишь в вагоне поезда. Относительно вагона ты неподвижен, относительно рельсов летишь со скоростью 80 км/ч, а относительно встречного поезда — все 160 км/ч. Все три ответа верны. Вопрос «с какой скоростью движется тело?» без указания, относительно чего, не имеет смысла.</p></aside><h3 id="materialnaya-tochka">Материальная точка</h3><p><strong>Материальная точка</strong> — тело, размерами которого можно пренебречь в данной задаче.</p><p>Обрати внимание на слова «<strong>в данной задаче</strong>». Одно и то же тело в одной задаче — точка, в другой — нет.</p><ul><li>Поезд едет из Москвы в Казань (800 км) — его длина 500 м не важна, это точка.</li><li>Тот же поезд въезжает на мост длиной 300 м — теперь длина принципиальна, точкой считать нельзя.</li></ul><h3 id="sistema-otscheta">Система отсчёта</h3><p><strong>Система отсчёта</strong> — совокупность тела отсчёта, системы координат, связанной с телом отсчёта, и прибора для измерения времени.</p><p>Три составные части, все обязательны:</p><figure class="fig">
+<svg viewBox="0 0 460 190" role="img" aria-label="Три части системы отсчёта: тело отсчёта, оси координат и часы">
+  <g class="fig-line">
+    <line x1="60" y1="150" x2="60" y2="40"/>
+    <line x1="60" y1="150" x2="185" y2="150"/>
+    <path d="M60 40 l-5 10 h10 z" class="fig-fill"/>
+    <path d="M185 150 l-10 -5 v10 z" class="fig-fill"/>
+  </g>
+  <g class="fig-accent">
+    <circle cx="60" cy="150" r="5" class="fig-fill-accent"/>
+  </g>
+  <text class="fig-t" x="46" y="36">y</text>
+  <text class="fig-t" x="190" y="155">x</text>
+  <text class="fig-t fig-t-mid" x="60" y="176">тело отсчёта</text>
+
+  <g class="fig-line">
+    <circle cx="300" cy="95" r="38" fill="none"/>
+    <line x1="300" y1="95" x2="300" y2="70"/>
+    <line x1="300" y1="95" x2="318" y2="104"/>
+    <circle cx="300" cy="95" r="3" class="fig-fill"/>
+  </g>
+  <text class="fig-t fig-t-mid" x="300" y="160">часы</text>
+  <text class="fig-t fig-t-mid" x="380" y="95">+</text>
+</svg>
+<figcaption>Тело отсчёта · связанные с ним оси координат · прибор для измерения времени</figcaption>
+</figure><p>Уберёшь любую часть — задача перестанет иметь решение. Без часов не измерить время, без осей не сказать, где тело, без тела отсчёта не понять, относительно чего всё это.</p><h3 id="traektoriya">Траектория</h3><p><strong>Траектория</strong> — линия, вдоль которой движется тело.</p><figure class="fig">
+<svg viewBox="0 0 460 210" role="img" aria-label="Траектория — кривая линия от начальной точки до конечной">
+  <path class="fig-line" d="M40 120 C 70 190, 150 200, 190 160 C 230 120, 215 60, 165 60
+                            C 115 60, 105 130, 150 155 C 200 182, 280 175, 315 140
+                            C 355 100, 380 70, 415 55" fill="none"/>
+  <circle class="fig-fill" cx="40" cy="120" r="5"/>
+  <circle class="fig-fill" cx="415" cy="55" r="5"/>
+  <text class="fig-t" x="14" y="145">начало</text>
+  <text class="fig-t" x="378" y="42">конец</text>
+</svg>
+<figcaption>Траектория может быть какой угодно кривой — это просто след, который тело оставило в пространстве</figcaption>
+</figure><p>Траектория тоже зависит от системы отсчёта. Точка на колесе едущего велосипеда: относительно рамы — окружность, относительно дороги — волнистая линия (циклоида).</p><h3 id="vektor">Вектор</h3><p><strong>Вектор</strong> — направленный отрезок.</p><p>У вектора есть <strong>длина</strong> (её называют модулем) и <strong>направление</strong>. Два вектора равны, только если совпадает и то, и другое.</p><figure class="fig">
+<svg viewBox="0 0 460 200" role="img" aria-label="Векторы: равные по длине, противоположные и разного направления">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" class="fig-fill"/>
+    </marker>
+    <marker id="ar-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" class="fig-fill-accent"/>
+    </marker>
+  </defs>
+
+  <line class="fig-line" marker-end="url(#ar)" x1="30"  y1="50"  x2="170" y2="50"/>
+  <line class="fig-line" marker-end="url(#ar)" x1="170" y1="95"  x2="30"  y2="95"/>
+  <text class="fig-t" x="30" y="130">равны по длине,</text>
+  <text class="fig-t" x="30" y="148">но не равны как векторы</text>
+
+  <line class="fig-accent" marker-end="url(#ar-a)" x1="255" y1="150" x2="255" y2="40"/>
+  <line class="fig-accent" marker-end="url(#ar-a)" x1="320" y1="150" x2="360" y2="55"/>
+  <line class="fig-accent" marker-end="url(#ar-a)" x1="320" y1="150" x2="430" y2="95"/>
+  <text class="fig-t" x="255" y="178">разные направления</text>
+</svg>
+<figcaption>Стрелки одинаковой длины, но направленные в разные стороны, — это разные векторы</figcaption>
+</figure><h3 id="put-i-peremeschenie">Путь и перемещение</h3><p>Это два разных ответа на вопрос «сколько тело прошло», и путать их нельзя.</p><p><strong>Путь</strong> — длина траектории. Обозначается <span class="math">L</span>, измеряется в метрах. Путь — <strong>скаляр</strong>: у него есть только число, направления нет. Путь никогда не уменьшается и не бывает отрицательным.</p><p><strong>Перемещение</strong> — вектор, проведённый из начального положения тела в конечное. Обозначается <span class="math"><span class="m-vec">S</span></span>, тоже измеряется в метрах.</p><figure class="fig">
+<svg viewBox="0 0 460 200" role="img" aria-label="Путь идёт по кривой траектории, перемещение — прямая стрелка из начала в конец">
+  <defs>
+    <marker id="ar-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" class="fig-fill-accent"/>
+    </marker>
+  </defs>
+  <path class="fig-line" d="M50 150 C 90 60, 160 40, 210 80 C 260 120, 290 150, 340 120 C 375 100, 390 80, 400 62" fill="none"/>
+  <line class="fig-accent" marker-end="url(#ar-s)" x1="50" y1="150" x2="398" y2="64"/>
+  <circle class="fig-fill" cx="50" cy="150" r="5"/>
+  <circle class="fig-fill" cx="400" cy="62" r="5"/>
+  <text class="fig-t" x="150" y="45">L — путь, вся длина кривой</text>
+  <text class="fig-t fig-t-accent" x="120" y="140">S — перемещение, по прямой</text>
+</svg>
+<figcaption>По одной и той же траектории путь всегда длиннее перемещения — или равен ему, если тело шло по прямой</figcaption>
+</figure><p>Как их различать:</p><div class="table-wrap"><table><thead><tr><th></th><th>Путь <span class="math">L</span></th><th>Перемещение <span class="math"><span class="m-vec">S</span></span></th></tr></thead><tbody><tr><td>Что это</td><td>длина траектории</td><td>вектор из начала в конец</td></tr><tr><td>Тип величины</td><td>скаляр (только число)</td><td>вектор (число и направление)</td></tr><tr><td>Если вернуться в старт</td><td>равен всей пройденной длине</td><td>равно нулю</td></tr><tr><td>Соотношение</td><td>всегда <span class="math">L ⩾ S</span></td><td></td></tr></tbody></table></div><aside class="note"><p>Ты пробежал круг по стадиону 400 м и вернулся в ту же точку. Путь <span class="math">L = 400</span> м. Перемещение <span class="math">S = 0</span> — ты там же, откуда стартовал. Именно поэтому нельзя говорить «прошёл перемещение 400 метров».</p></aside><h3 id="gde-eto-vstrechaetsya-v-zhizni">Где это встречается в жизни</h3><ul><li><strong>Шагомер</strong> считает путь: он суммирует все шаги, и неважно, что вечером ты дома, откуда и вышел.</li><li><strong>Навигатор</strong> показывает и то, и другое: «до цели 3 км по прямой» — это модуль перемещения, «маршрут 5,2 км» — это путь.</li><li><strong>Такси</strong> берёт деньги за путь, а не за перемещение. Поэтому объезд пробки через центр стоит дороже, хотя приедешь ты в ту же точку.</li></ul></section>
+
+
+</article>
+<footer class="page-foot">
+<a href="../../index.html">← Все темы</a>
+<button class="link-btn" id="print-btn">Распечатать</button>
+</footer>
+<aside class="signature">
+<img class="sig-logo" src="../../assets/img/logo-mark.png" alt="" width="46" height="46">
+<div class="sig-text">
+  <span class="sig-name">INVARIANT</span>
+  <span class="sig-sub">Физика · материалы к занятиям</span>
+</div>
+</aside>
+</main>
+</div>
+<div class="scrim" id="scrim" hidden></div>
+<script src="../../assets/app.js"></script>
+</body>
+</html>

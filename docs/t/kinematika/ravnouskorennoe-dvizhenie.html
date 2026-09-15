@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="ru" class="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Равноускоренное движение — INVARIANT</title>
+<link rel="stylesheet" href="../../assets/fonts.css">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="icon" href="../../assets/img/logo-mark.png">
+<link rel="apple-touch-icon" href="../../assets/img/logo-mark.png">
+<meta name="theme-color" content="#0d1330">
+</head>
+<body>
+<header class="topbar">
+<button class="icon-btn menu-btn" id="menu-btn" aria-label="Открыть список тем" aria-expanded="false">☰</button>
+<a class="brand" href="../../index.html">
+  <img class="brand-logo" src="../../assets/img/logo-mark.png" alt="" width="34" height="34">
+  <span class="brand-text">INVARIANT<span class="brand-sub">Физика</span></span>
+</a>
+<div class="topbar-right">
+<button class="icon-btn" id="theme-btn" aria-label="Сменить оформление">◐</button>
+</div>
+</header>
+<div class="shell">
+<nav class="sidebar" id="sidebar" aria-label="Разделы">
+<div class="nav-inner">
+<label class="search-box">
+  <span class="search-icon" aria-hidden="true">⌕</span>
+  <input type="search" id="nav-search" placeholder="Поиск по темам" autocomplete="off" aria-label="Поиск по темам">
+</label>
+<div id="nav-list"><div class="nav-group"><h3>Кинематика</h3><ul><li><a href="../../t/kinematika/osnovnye-ponyatiya.html">Основные понятия кинематики</a></li><li><a href="../../t/kinematika/srednyaya-skorost.html">Равномерное движение и средняя скорость</a></li><li><a href="../../t/kinematika/ravnouskorennoe-dvizhenie.html" class="active">Равноускоренное движение</a></li><li><a href="../../t/kinematika/svobodnoe-padenie-i-krivolineynoe-dvizhenie.html">Свободное падение и криволинейное движение</a></li></ul></div></div>
+<p class="nav-empty" id="nav-empty" hidden>Ничего не нашлось</p>
+</div>
+</nav>
+<main class="content">
+<article class="topic">
+<p class="eyebrow">Кинематика</p>
+<h1>Равноускоренное движение</h1>
+<p class="lede">Ускорение, три формулы перемещения, проекция вектора на ось и сложение векторов.</p>
+<section class="theory"><h3 id="ravnouskorennoe-dvizhenie">Равноускоренное движение</h3><p><strong>Равноускоренное движение</strong> — это движение, при котором скорость тела изменяется на одинаковую величину за любые равные промежутки времени.</p><p>Короткая запись условия: <span class="math"><span class="m-vec">v</span> ≠ const</span>.</p><p>Сравни с прошлой темой: при равномерном движении скорость постоянна, при равноускоренном — постоянно <strong>изменение</strong> скорости. За каждую секунду скорость прибавляется (или убавляется) на одно и то же число.</p><aside class="note"><p>Автомобиль трогается и каждую секунду набирает по 2 м/с: 0 → 2 → 4 → 6 м/с. Это равноускоренное движение. Если бы он набирал 2, потом 5, потом 1 м/с — движение уже неравноускоренное, наши формулы к нему не применимы.</p></aside><p>Слово «равноускоренное» не значит «разгоняется». Торможение с постоянным ускорением — тоже равноускоренное движение, его иногда называют равнозамедленным.</p><h3 id="uskorenie">Ускорение</h3><p><strong>Ускорение</strong> — векторная физическая величина, определяющая быстроту изменения скорости тела.</p><div class="math-block"><span class="m-vec">a</span> = <span class="m-frac"><span class="m-num">Δ <span class="m-vec">v</span></span><span class="m-den">Δ t</span></span> = <span class="m-frac"><span class="m-num"><span class="m-vec">v</span> - <span class="m-vec">v</span><sub>0</sub></span><span class="m-den">t</span></span></div><p>Единица измерения — <span class="math"><span class="m-text">м/с</span><sup>2</sup></span>.</p><p>Здесь <span class="math"><span class="m-vec">v</span><sub>0</sub></span> — начальная скорость, <span class="math"><span class="m-vec">v</span></span> — скорость через время <span class="math">t</span>.</p><p>Ускорение <span class="math">2 <span class="m-text">м/с</span><sup>2</sup></span> читается так: «за каждую секунду скорость меняется на 2 м/с».</p><p><strong>Куда направлено ускорение.</strong> Правило одно, и оно решает половину задач темы:</p><ul><li>скорость <strong>растёт</strong> — ускорение направлено <strong>вдоль</strong> скорости;</li><li>скорость <strong>убывает</strong> — ускорение направлено <strong>против</strong> скорости.</li></ul><figure class="fig">
+<svg viewBox="0 0 460 210" role="img" aria-label="Разгон: ускорение вдоль скорости. Торможение: ускорение против скорости">
+  <defs>
+    <marker id="ar-uskor" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" class="fig-fill"/>
+    </marker>
+    <marker id="ar-uskor-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" class="fig-fill-accent"/>
+    </marker>
+  </defs>
+
+  <rect class="fig-line" x="30" y="70" width="52" height="34" rx="5"/>
+  <line class="fig-line" x1="92" y1="87" x2="185" y2="87" marker-end="url(#ar-uskor)"/>
+  <text class="fig-t" x="130" y="78">v</text>
+  <line class="fig-accent" x1="92" y1="128" x2="165" y2="128" marker-end="url(#ar-uskor-a)"/>
+  <text class="fig-t fig-t-accent" x="122" y="150">a</text>
+  <text class="fig-t fig-t-mid" x="105" y="185">разгон: a вдоль v</text>
+
+  <rect class="fig-line" x="270" y="70" width="52" height="34" rx="5"/>
+  <line class="fig-line" x1="332" y1="87" x2="425" y2="87" marker-end="url(#ar-uskor)"/>
+  <text class="fig-t" x="370" y="78">v</text>
+  <line class="fig-accent" x1="332" y1="128" x2="259" y2="128" marker-end="url(#ar-uskor-a)"/>
+  <text class="fig-t fig-t-accent" x="288" y="150">a</text>
+  <text class="fig-t fig-t-mid" x="345" y="185">торможение: a против v</text>
+</svg>
+<figcaption>Направление ускорения определяется не направлением движения, а тем, растёт скорость или падает</figcaption>
+</figure><aside class="note"><p>Типичная ошибка: «тело едет вправо, значит и ускорение вправо». Нет. Тормозящий вправо автомобиль имеет ускорение, направленное <strong>влево</strong>, против движения.</p></aside><h3 id="proektsiya-vektora-na-os">Проекция вектора на ось</h3><p>Считать в векторах неудобно, поэтому все формулы переводят в числа — проекции на выбранную ось.</p><p><strong>Проекция вектора на ось</strong> — это число, равное длине этого вектора, умноженной на косинус угла между вектором и осью.</p><div class="math-block">a<sub>x</sub> = |<span class="m-vec">a</span>| · <span class="m-text">cos</span> α</div><p>Три случая, которые встречаются почти во всех задачах:</p><figure class="fig">
+<svg viewBox="0 0 460 220" role="img" aria-label="Проекция вектора на ось: вдоль оси, против оси и под углом">
+  <defs>
+    <marker id="ar-proj" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" class="fig-fill"/>
+    </marker>
+    <marker id="ar-proj-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" class="fig-fill-accent"/>
+    </marker>
+  </defs>
+
+  <line class="fig-line" x1="20" y1="170" x2="440" y2="170" marker-end="url(#ar-proj)"/>
+  <text class="fig-t" x="444" y="164">x</text>
+
+  <line class="fig-line" x1="30" y1="90" x2="130" y2="90" marker-end="url(#ar-proj)"/>
+  <text class="fig-t fig-t-mid" x="80" y="80">a</text>
+  <line class="fig-line" x1="30" y1="94" x2="30" y2="164" stroke-dasharray="4 4"/>
+  <line class="fig-line" x1="130" y1="94" x2="130" y2="164" stroke-dasharray="4 4"/>
+  <line class="fig-accent" x1="30" y1="170" x2="130" y2="170" marker-end="url(#ar-proj-a)"/>
+  <text class="fig-t fig-t-mid fig-t-accent" x="80" y="196">угол 0°, проекция &gt; 0</text>
+
+  <line class="fig-line" x1="275" y1="90" x2="175" y2="90" marker-end="url(#ar-proj)"/>
+  <text class="fig-t fig-t-mid" x="225" y="80">b</text>
+  <line class="fig-line" x1="175" y1="94" x2="175" y2="164" stroke-dasharray="4 4"/>
+  <line class="fig-line" x1="275" y1="94" x2="275" y2="164" stroke-dasharray="4 4"/>
+  <line class="fig-accent" x1="275" y1="170" x2="175" y2="170" marker-end="url(#ar-proj-a)"/>
+  <text class="fig-t fig-t-mid fig-t-accent" x="225" y="196">угол 180°, проекция &lt; 0</text>
+
+  <line class="fig-line" x1="320" y1="170" x2="425" y2="112" marker-end="url(#ar-proj)"/>
+  <text class="fig-t" x="392" y="106">c</text>
+  <line class="fig-line" x1="425" y1="116" x2="425" y2="164" stroke-dasharray="4 4"/>
+  <path class="fig-line" d="M356 170 A 36 36 0 0 0 349 150"/>
+  <text class="fig-t" x="352" y="163">α</text>
+  <line class="fig-accent" x1="320" y1="170" x2="425" y2="170" marker-end="url(#ar-proj-a)"/>
+  <text class="fig-t fig-t-mid fig-t-accent" x="372" y="196">угол α, проекция = |c|·cos α</text>
+</svg>
+<figcaption>Проекция — это «тень» вектора на оси. Она может быть положительной, отрицательной и нулевой</figcaption>
+</figure><ul><li>вектор <strong>вдоль</strong> оси: <span class="math"><span class="m-text">cos</span> 0° = 1</span>, проекция равна длине вектора со знаком «плюс»;</li><li>вектор <strong>против</strong> оси: <span class="math"><span class="m-text">cos</span> 180° = -1</span>, проекция равна длине вектора со знаком «минус»;</li><li>вектор <strong>перпендикулярен</strong> оси: <span class="math"><span class="m-text">cos</span> 90° = 0</span>, проекция равна нулю.</li></ul><aside class="note"><p>Проекция — это число, а не вектор. У неё бывает знак, но не бывает направления. Если в ответе получилось <span class="math">a<sub>x</sub> = -0,4 <span class="m-text">м/с</span><sup>2</sup></span>, это значит: модуль ускорения <span class="math">0,4 <span class="m-text">м/с</span><sup>2</sup></span>, направлено против выбранной оси. Отрицательного ускорения «самого по себе» не существует.</p></aside><h3 id="formuly">Формулы</h3><p>Первая — определение ускорения, из неё выражается скорость в любой момент:</p><div class="math-block"><span class="m-vec">v</span> = <span class="m-vec">v</span><sub>0</sub> + <span class="m-vec">a</span> t</div><p>Три формулы перемещения — все три описывают одно и то же движение, отличаются только тем, какая величина в них не входит:</p><div class="math-block"><span class="m-vec">S</span> = <span class="m-vec">v</span><sub>0</sub> t + <span class="m-frac"><span class="m-num"><span class="m-vec">a</span> t<sup>2</sup></span><span class="m-den">2</span></span></div><div class="math-block"><span class="m-vec">S</span> = <span class="m-frac"><span class="m-num"><span class="m-vec">v</span><sub>0</sub> + <span class="m-vec">v</span></span><span class="m-den">2</span></span> · t <span class="m-gap"></span> <span class="m-vec">S</span> = <span class="m-frac"><span class="m-num"><span class="m-vec">v</span><sup>2</sup> - <span class="m-vec">v</span><sub>0</sub><sup>2</sup></span><span class="m-den">2<span class="m-vec">a</span></span></span></div><p>Вторая и третья не запоминаются отдельно — они получаются из первой, если подставить в неё <span class="math">t = <span class="m-frac"><span class="m-num"><span class="m-vec">v</span> - <span class="m-vec">v</span><sub>0</sub></span><span class="m-den"><span class="m-vec">a</span></span></span></span>.</p><h3 id="kak-vybrat-formulu-za-5-sekund">Как выбрать формулу за 5 секунд</h3><p>Выпиши, что дано и что найти. Потом посмотри, <strong>какой величины в задаче нет вообще</strong>, — и бери формулу, где её нет:</p><div class="table-wrap"><table><thead><tr><th>Нет в задаче</th><th>Формула</th></tr></thead><tbody><tr><td>нет <span class="math"><span class="m-vec">S</span></span></td><td><span class="math"><span class="m-vec">v</span> = <span class="m-vec">v</span><sub>0</sub> + <span class="m-vec">a</span> t</span></td></tr><tr><td>нет <span class="math"><span class="m-vec">v</span></span> (конечной)</td><td><span class="math"><span class="m-vec">S</span> = <span class="m-vec">v</span><sub>0</sub> t + <span class="m-frac"><span class="m-num"><span class="m-vec">a</span> t<sup>2</sup></span><span class="m-den">2</span></span></span></td></tr><tr><td>нет <span class="math"><span class="m-vec">a</span></span></td><td><span class="math"><span class="m-vec">S</span> = <span class="m-frac"><span class="m-num"><span class="m-vec">v</span><sub>0</sub> + <span class="m-vec">v</span></span><span class="m-den">2</span></span> · t</span></td></tr><tr><td>нет <span class="math">t</span></td><td><span class="math"><span class="m-vec">S</span> = <span class="m-frac"><span class="m-num"><span class="m-vec">v</span><sup>2</sup> - <span class="m-vec">v</span><sub>0</sub><sup>2</sup></span><span class="m-den">2<span class="m-vec">a</span></span></span></span></td></tr></tbody></table></div><h3 id="skrytye-dannye">Скрытые данные</h3><p>Половина задач темы решается только потому, что ты правильно прочитал условие. Обычные обороты и что они значат:</p><ul><li>«трогается с места», «стартует», «начинает движение», «скатывается» → <span class="math">v<sub>0</sub> = 0</span>;</li><li>«останавливается», «до полной остановки», «тормозной путь» → <span class="math">v = 0</span>;</li><li>«тормозит», «замедляет ход» → ускорение направлено против скорости;</li><li>«за какое время остановится» → снова <span class="math">v = 0</span>.</li></ul><h3 id="grafik-skorosti">График скорости</h3><p>При равноускоренном движении график <span class="math">v(t)</span> — прямая. Наклон прямой — это ускорение, а <strong>площадь под графиком</strong> — перемещение.</p><figure class="fig">
+<svg viewBox="0 0 460 250" role="img" aria-label="График скорости при равноускоренном движении: прямая, площадь под ней равна перемещению">
+  <defs>
+    <marker id="ar-graf" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" class="fig-fill"/>
+    </marker>
+  </defs>
+  <polygon class="fig-fill-accent" fill-opacity="0.16" points="70,200 70,150 380,70 380,200"/>
+  <line class="fig-line" x1="70" y1="215" x2="70" y2="30" marker-end="url(#ar-graf)"/>
+  <line class="fig-line" x1="45" y1="200" x2="435" y2="200" marker-end="url(#ar-graf)"/>
+  <text class="fig-t" x="48" y="26">v</text>
+  <text class="fig-t" x="438" y="194">t</text>
+  <line class="fig-accent" x1="70" y1="150" x2="380" y2="70"/>
+  <line class="fig-line" x1="70" y1="70" x2="380" y2="70" stroke-dasharray="4 4"/>
+  <line class="fig-line" x1="380" y1="70" x2="380" y2="200" stroke-dasharray="4 4"/>
+  <circle class="fig-fill-accent" cx="70" cy="150" r="4"/>
+  <circle class="fig-fill-accent" cx="380" cy="70" r="4"/>
+  <text class="fig-t" x="44" y="155">v₀</text>
+  <text class="fig-t" x="50" y="75">v</text>
+  <text class="fig-t fig-t-mid" x="380" y="220">t</text>
+  <text class="fig-t fig-t-mid" x="225" y="165">площадь = S</text>
+</svg>
+<figcaption>Чем круче прямая, тем больше ускорение. Прямая идёт вниз — тело тормозит</figcaption>
+</figure><h3 id="slozhenie-vektorov">Сложение векторов</h3><p>Скорости, перемещения и ускорения складываются не как числа, а как векторы. Три правила — на разные случаи.</p><p><strong>Правило треугольника.</strong> Для любых двух векторов. Первый откладываем от любой точки, второй — от конца первого. Суммой будет вектор, соединяющий начало первого с концом второго.</p><p><strong>Правило параллелограмма.</strong> Для двух векторов, выходящих из одной точки. Оба откладываем из общего начала, достраиваем параллелограмм, сумма — диагональ из их общего начала.</p><figure class="fig">
+<svg viewBox="0 0 460 210" role="img" aria-label="Правило треугольника и правило параллелограмма">
+  <defs>
+    <marker id="ar-sum" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" class="fig-fill"/>
+    </marker>
+    <marker id="ar-sum-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" class="fig-fill-accent"/>
+    </marker>
+  </defs>
+
+  <line class="fig-line" x1="30" y1="155" x2="150" y2="155" marker-end="url(#ar-sum)"/>
+  <text class="fig-t fig-t-mid" x="90" y="176">a</text>
+  <line class="fig-line" x1="150" y1="155" x2="205" y2="65" marker-end="url(#ar-sum)"/>
+  <text class="fig-t" x="186" y="118">b</text>
+  <line class="fig-accent" x1="30" y1="155" x2="205" y2="65" marker-end="url(#ar-sum-a)"/>
+  <text class="fig-t fig-t-accent" x="105" y="100">c</text>
+  <text class="fig-t fig-t-mid" x="115" y="200">треугольник</text>
+
+  <line class="fig-line" x1="270" y1="155" x2="330" y2="80" marker-end="url(#ar-sum)"/>
+  <text class="fig-t" x="286" y="105">a</text>
+  <line class="fig-line" x1="270" y1="155" x2="370" y2="155" marker-end="url(#ar-sum)"/>
+  <text class="fig-t fig-t-mid" x="320" y="176">b</text>
+  <line class="fig-line" x1="330" y1="80" x2="430" y2="80" stroke-dasharray="4 4"/>
+  <line class="fig-line" x1="370" y1="155" x2="430" y2="80" stroke-dasharray="4 4"/>
+  <line class="fig-accent" x1="270" y1="155" x2="430" y2="80" marker-end="url(#ar-sum-a)"/>
+  <text class="fig-t fig-t-accent" x="350" y="130">c</text>
+  <text class="fig-t fig-t-mid" x="350" y="200">параллелограмм</text>
+</svg>
+<figcaption>Оба правила дают один и тот же вектор суммы — выбирай тот, который удобнее нарисовать</figcaption>
+</figure><p><strong>Правило многоугольника.</strong> Когда векторов три и больше. Ставим их друг за другом: конец предыдущего совпадает с началом следующего. Результат соединяет начало самого первого с концом самого последнего.</p><figure class="fig">
+<svg viewBox="0 0 460 200" role="img" aria-label="Правило многоугольника: четыре вектора цепочкой и их сумма">
+  <defs>
+    <marker id="ar-mnog" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" class="fig-fill"/>
+    </marker>
+    <marker id="ar-mnog-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" class="fig-fill-accent"/>
+    </marker>
+  </defs>
+  <line class="fig-line" x1="30" y1="160" x2="130" y2="120" marker-end="url(#ar-mnog)"/>
+  <text class="fig-t" x="72" y="155">a</text>
+  <line class="fig-line" x1="130" y1="120" x2="190" y2="55" marker-end="url(#ar-mnog)"/>
+  <text class="fig-t" x="167" y="100">b</text>
+  <line class="fig-line" x1="190" y1="55" x2="300" y2="78" marker-end="url(#ar-mnog)"/>
+  <text class="fig-t" x="240" y="52">c</text>
+  <line class="fig-line" x1="300" y1="78" x2="395" y2="38" marker-end="url(#ar-mnog)"/>
+  <text class="fig-t" x="345" y="74">d</text>
+  <line class="fig-accent" x1="30" y1="160" x2="395" y2="38" marker-end="url(#ar-mnog-a)"/>
+  <text class="fig-t fig-t-accent" x="215" y="135">сумма</text>
+</svg>
+<figcaption>Порядок, в котором ставишь векторы, на результат не влияет</figcaption>
+</figure><h3 id="tipovye-oshibki">Типовые ошибки</h3><p><strong>Забыли перевести км/ч в м/с.</strong> Ускорение всегда в <span class="math"><span class="m-text">м/с</span><sup>2</sup></span>, поэтому скорость обязана быть в м/с. Делишь на 3,6.</p><p><strong>Знак ускорения поставили наугад.</strong> Сначала нарисуй ось и оба вектора, потом расставляй знаки. Если ускорение против оси — в формулу идёт <span class="math">-a</span>, и минус нужно провести через всю формулу.</p><p><strong>Спутали путь и перемещение.</strong> Пока тело движется в одну сторону, <span class="math">L = |<span class="m-vec">S</span>|</span>. Но если тело успело остановиться и поехать назад (задача 11), путь уже больше модуля перемещения.</p><p><strong>Взяли конечную скорость вместо начальной.</strong> В формулах <span class="math"><span class="m-vec">v</span><sub>0</sub></span> — скорость в тот момент, от которого ты отсчитываешь время. У тормозящего поезда это скорость <strong>до</strong> торможения.</p><h3 id="proverka-na-zdravyy-smysl">Проверка на здравый смысл</h3><ul><li>Тело разгоняется — проекция ускорения на ось движения <strong>положительна</strong>. Получил минус — перепутал направление.</li><li>Тело тормозит — проекция <strong>отрицательна</strong>, и конечная скорость <strong>меньше</strong> начальной. Если посчитал, что при торможении скорость выросла, ищи ошибку в знаке.</li><li>Тормозной путь при удвоении скорости растёт <strong>вчетверо</strong>: в формуле <span class="math">S = <span class="m-frac"><span class="m-num">v<sub>0</sub><sup>2</sup></span><span class="m-den">2a</span></span></span> скорость в квадрате. Ответ «в два раза» — типичный неверный.</li><li>Пассажирский поезд не тормозит за 3 метра, а пешеход не разгоняется до 100 м/с. Оцени порядок числа глазами.</li></ul><h3 id="gde-eto-vstrechaetsya-v-zhizni">Где это встречается в жизни</h3><ul><li><strong>Тормозной путь автомобиля.</strong> Знаки «40» у школы стоят именно поэтому: тормозной путь пропорционален квадрату скорости, и на 60 км/ч он вчетверо длиннее, чем на 30.</li><li><strong>Разгон до сотни.</strong> Рекламное «до 100 км/ч за 5 секунд» — это в точности <span class="math">a = <span class="m-frac"><span class="m-num">27,8</span><span class="m-den">5</span></span> ≈ 5,6 <span class="m-text">м/с</span><sup>2</sup></span>.</li><li><strong>Взлётная полоса.</strong> Её длину считают по формуле <span class="math">S = <span class="m-frac"><span class="m-num">v<sup>2</sup></span><span class="m-den">2a</span></span></span>: самолёту нужно набрать скорость отрыва до конца бетона.</li><li><strong>Лифт.</strong> Первую и последнюю секунды поездки ты чувствуешь тяжесть или лёгкость — это моменты, когда лифт движется с ускорением. Между ними скорость постоянна и ничего не ощущается.</li></ul></section>
+<section class="tasks">
+<h2 class="section-head"><span class="section-kicker">Домашнее задание</span>
+<span class="task-count">27 задач</span></h2>
+<h3 class="task-group">Часть 1. Направление ускорения</h3><article class="task"><div class="task-num">1</div><div class="task-body">Куда направлены ускорения следующих тел: а) у поезда, который начинает тормозить; б) у поезда, который отходит от станции?</div></article><article class="task"><div class="task-num">2</div><div class="task-body">Куда движутся тела и как изменяются их скорости, векторы начальных скоростей и ускорений которых показаны на рисунке?<figure class="fig">
+<svg viewBox="0 0 460 330" role="img" aria-label="Четыре тела: векторы начальной скорости и ускорения для каждого">
+  <defs>
+    <marker id="ar-z2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" class="fig-fill"/>
+    </marker>
+    <marker id="ar-z2a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" class="fig-fill-accent"/>
+    </marker>
+  </defs>
+
+  <text class="fig-t fig-t-accent" x="60" y="26">a</text>
+  <line class="fig-accent" x1="40" y1="40" x2="120" y2="40" marker-end="url(#ar-z2a)"/>
+  <text class="fig-t" x="60" y="68">v₀</text>
+  <line class="fig-line" x1="40" y1="82" x2="160" y2="82" marker-end="url(#ar-z2)"/>
+  <rect class="fig-line" x="80" y="100" width="30" height="26" rx="4"/>
+  <text class="fig-t fig-t-mid" x="95" y="119">1</text>
+
+  <text class="fig-t fig-t-accent" x="300" y="26">a</text>
+  <line class="fig-accent" x1="320" y1="40" x2="240" y2="40" marker-end="url(#ar-z2a)"/>
+  <text class="fig-t" x="300" y="68">v₀</text>
+  <line class="fig-line" x1="280" y1="82" x2="400" y2="82" marker-end="url(#ar-z2)"/>
+  <rect class="fig-line" x="325" y="100" width="30" height="26" rx="4"/>
+  <text class="fig-t fig-t-mid" x="340" y="119">2</text>
+
+  <text class="fig-t fig-t-accent" x="60" y="216">a</text>
+  <line class="fig-accent" x1="120" y1="230" x2="40" y2="230" marker-end="url(#ar-z2a)"/>
+  <text class="fig-t" x="60" y="258">v₀</text>
+  <line class="fig-line" x1="160" y1="272" x2="40" y2="272" marker-end="url(#ar-z2)"/>
+  <rect class="fig-line" x="80" y="290" width="30" height="26" rx="4"/>
+  <text class="fig-t fig-t-mid" x="95" y="309">3</text>
+
+  <text class="fig-t fig-t-accent" x="300" y="216">a</text>
+  <line class="fig-accent" x1="240" y1="230" x2="320" y2="230" marker-end="url(#ar-z2a)"/>
+  <text class="fig-t" x="300" y="258">v₀</text>
+  <line class="fig-line" x1="400" y1="272" x2="280" y2="272" marker-end="url(#ar-z2)"/>
+  <rect class="fig-line" x="325" y="290" width="30" height="26" rx="4"/>
+  <text class="fig-t fig-t-mid" x="340" y="309">4</text>
+</svg>
+<figcaption>Начальная скорость показана тонкой стрелкой, ускорение — цветной</figcaption>
+</figure></div></article><h3 class="task-group">Часть 2. Ускорение и время</h3><article class="task"><div class="task-num">3</div><div class="task-body">С каким ускорением двигался автобус, если, трогаясь с места стоянки, он развил скорость 15 м/с за 50 с?</div></article><article class="task"><div class="task-num">4</div><div class="task-body">Поезд подходит к станции со скоростью 21,6 км/ч и останавливается через минуту после начала торможения. С каким ускорением двигался поезд?</div></article><article class="task"><div class="task-num">5</div><div class="task-body">В начале измерения скорость тела равнялась 5 м/с и направлена была на север. Через 50 с измерения показали, что тело двигается со скоростью 15 м/с на юг. Считая движение тела равноускоренным прямолинейным, определите его ускорение.</div></article><article class="task"><div class="task-num">6</div><div class="task-body">Троллейбус, трогаясь с места, движется с постоянным ускорением 1,5 м/с². Через сколько времени он приобретёт скорость 54 км/ч?</div></article><article class="task"><div class="task-num">7</div><div class="task-body">Через сколько времени останавливается автобус, если его начальная скорость 20 м/с, а ускорение 1,25 м/с²?</div></article><article class="task"><div class="task-num">8</div><div class="task-body">Двигаясь с ускорением 5 м/с², скорость космической ракеты увеличилась на 100 м/с. За какое время произошло такое изменение скорости?</div></article><h3 class="task-group">Часть 3. Скорость через время</h3><article class="task"><div class="task-num">9</div><div class="task-body">Какую скорость приобретает отходящий от станции поезд через 7 с от начала движения, если его ускорение равно 0,9 м/с²?</div></article><article class="task"><div class="task-num">10</div><div class="task-body">Какую скорость приобретает автомобиль при торможении с ускорением 0,5 м/с² через 10 с от начала торможения, если начальная скорость его была равна 72 км/ч?</div></article><article class="task"><div class="task-num">11</div><div class="task-body">Определите скорость тела при торможении с ускорением 0,2 м/с² через 30 с от начала торможения, если начальная скорость его была равна 2 м/с.</div></article><h3 class="task-group">Часть 4. Перемещение и путь</h3><article class="task"><div class="task-num">12</div><div class="task-body">Тело движется прямолинейно равнозамедленно с начальной скоростью 10 м/с и ускорением 2 м/с². Определите перемещение тела через 5 с после начала движения.</div></article><article class="task"><div class="task-num">13</div><div class="task-body">Чтобы оторваться от земли, самолёт должен набрать скорость 180 м/с. На каком расстоянии от места старта на взлётной полосе самолёт достигает этого значения скорости, если его ускорение постоянно и равно 2,5 м/с²?</div></article><article class="task"><div class="task-num">14</div><div class="task-body">Пассажирский поезд тормозит с ускорением 0,2 м/с². На каком расстоянии от места включения тормоза скорость поезда станет равной 5 м/с, если перед торможением скорость была 54 км/ч?</div></article><article class="task"><div class="task-num">15</div><div class="task-body">Автобус движется со скоростью 36 км/ч. На каком расстоянии от остановки водитель должен начать тормозить, сообщая автобусу ускорение, не превышающее 1,2 м/с²?</div></article><article class="task"><div class="task-num">16</div><div class="task-body">Поезд, движущийся после начала торможения с ускорением 0,40 м/с², через 15 с имел скорость 10 м/с. Найдите пройденный путь за это время.</div></article><article class="task"><div class="task-num">17</div><div class="task-body">Снаряд, летящий со скоростью 1000 м/с, пробивает стенку блиндажа за 0,001 с, и после этого его скорость оказывается равной 200 м/с. Считая движение снаряда в толще стенки равноускоренным, найдите её толщину.</div></article><article class="task"><div class="task-num">18</div><div class="task-body">После старта гоночный автомобиль достиг скорости 360 км/ч за 25 с. Какое расстояние он прошёл за это время?</div></article><article class="task"><div class="task-num">19</div><div class="task-body">При аварийном торможении автомобиль, движущийся со скоростью 72 км/ч, остановился через 5 с. Найдите тормозной путь.</div></article><h3 class="task-group">Часть 5. Уровень B — две формулы в одной задаче</h3><article class="task"><div class="task-num">20</div><div class="task-body">Шарик скатывается по жёлобу длиной 1,25 м с ускорением 1,6 м/с². Какова скорость шарика в конце жёлоба?</div></article><article class="task"><div class="task-num">21</div><div class="task-body">Самолёт при отрыве от земли имеет скорость 252 км/ч и пробегает по бетонированной дорожке расстояние 700 м. Сколько времени продолжается разбег самолёта? Движение считайте равноускоренным.</div></article><article class="task"><div class="task-num">22</div><div class="task-body">Ножной тормоз грузового автомобиля считается исправным, если при торможении автомобиля, движущегося со скоростью 30 км/ч по сухой и ровной дороге, тормозной путь не превышает 9,0 м. Найдите соответствующее этой норме тормозное ускорение.</div></article><article class="task"><div class="task-num">23</div><div class="task-body">При какой начальной скорости поезд пройдёт путь 1260 м в течение 60 с, замедляя ход с ускорением 1,5 м/с²?</div></article><article class="task"><div class="task-num">24</div><div class="task-body">Электропоезд тормозит с ускорением 0,40 м/с². Определите, за какое время он остановится, если тормозной путь равен 50 м.</div></article><article class="task"><div class="task-num">25</div><div class="task-body">Лифт Останкинской телевизионной башни заканчивает своё движение после прохождения 49 м за 14 с. Найдите ускорение и начальную скорость лифта.</div></article><article class="task"><div class="task-num">26</div><div class="task-body">Поезд, двигаясь с горы с ускорением 0,2 м/с², прошёл путь 340 м и развил скорость 19 м/с. Сколько времени двигался поезд и какой была его скорость в начале отсчёта?</div></article><article class="task"><div class="task-num">27</div><div class="task-body">Поезд, движущийся после начала торможения с ускорением 0,40 м/с², через 25 с остановился. Найдите скорость в момент начала торможения и тормозной путь.</div></article>
+</section>
+<section class="answers" id="otvety">
+<button class="answers-toggle" id="answers-toggle" aria-expanded="false" aria-controls="answers-body">
+  <span class="answers-label">Ответы</span>
+  <span class="answers-hint">Сначала реши сам — потом проверь</span>
+  <span class="chev" aria-hidden="true">▾</span>
+</button>
+<ol class="answers-list" id="answers-body" hidden><li><span class="ans-num">1</span><span class="ans-body">а) У тормозящего поезда скорость уменьшается, поэтому ускорение направлено против движения. б) У отходящего от станции поезда скорость увеличивается, поэтому ускорение направлено вдоль движения.</span></li><li><span class="ans-num">2</span><span class="ans-body">Тело 1 движется вправо; направления ускорения и скорости совпадают, скорость увеличивается. Тело 2 движется вправо; ускорение направлено против скорости, скорость уменьшается. Тело 3 движется влево; направления совпадают, скорость увеличивается. Тело 4 движется влево; ускорение направлено против скорости, скорость уменьшается.</span></li><li><span class="ans-num">3</span><span class="ans-body"><span class="math">a = 0,3 <span class="m-text">м/с</span><sup>2</sup></span>, направлено в сторону движения.</span></li><li><span class="ans-num">4</span><span class="ans-body"><span class="math">a = 0,1 <span class="m-text">м/с</span><sup>2</sup></span>, направлено против движения.</span></li><li><span class="ans-num">5</span><span class="ans-body"><span class="math">a = 0,4 <span class="m-text">м/с</span><sup>2</sup></span>, направлено против первоначального движения.</span></li><li><span class="ans-num">6</span><span class="ans-body"><span class="math">t = 10</span> с.</span></li><li><span class="ans-num">7</span><span class="ans-body"><span class="math">t = 16</span> с.</span></li><li><span class="ans-num">8</span><span class="ans-body"><span class="math">t = 20</span> с.</span></li><li><span class="ans-num">9</span><span class="ans-body"><span class="math">v = 6,3</span> м/с, направлена вдоль движения.</span></li><li><span class="ans-num">10</span><span class="ans-body"><span class="math">v = 15</span> м/с, направлена вдоль первоначального движения.</span></li><li><span class="ans-num">11</span><span class="ans-body"><span class="math">v = 4</span> м/с, направлена <strong>против</strong> первоначального движения: тело успело остановиться (через 10 с) и поехало обратно.</span></li><li><span class="ans-num">12</span><span class="ans-body"><span class="math">S = 25</span> м, направлено вдоль начальной скорости.</span></li><li><span class="ans-num">13</span><span class="ans-body"><span class="math">S = 6480</span> м.</span></li><li><span class="ans-num">14</span><span class="ans-body"><span class="math">S = 500</span> м.</span></li><li><span class="ans-num">15</span><span class="ans-body"><span class="math">S ≈ 42</span> м.</span></li><li><span class="ans-num">16</span><span class="ans-body"><span class="math">L = 195</span> м.</span></li><li><span class="ans-num">17</span><span class="ans-body"><span class="math">L = 0,6</span> м.</span></li><li><span class="ans-num">18</span><span class="ans-body"><span class="math">L = 1250</span> м.</span></li><li><span class="ans-num">19</span><span class="ans-body"><span class="math">L = 50</span> м.</span></li><li><span class="ans-num">20</span><span class="ans-body"><span class="math">v = 2,0</span> м/с.</span></li><li><span class="ans-num">21</span><span class="ans-body"><span class="math">t = 20</span> с.</span></li><li><span class="ans-num">22</span><span class="ans-body"><span class="math">a ≈ 3,9 <span class="m-text">м/с</span><sup>2</sup></span>, направлено против движения.</span></li><li><span class="ans-num">23</span><span class="ans-body"><span class="math">v<sub>0</sub> = 66</span> м/с.</span></li><li><span class="ans-num">24</span><span class="ans-body"><span class="math">t ≈ 16</span> с.</span></li><li><span class="ans-num">25</span><span class="ans-body"><span class="math">a = 0,5 <span class="m-text">м/с</span><sup>2</sup></span>, <span class="math">v<sub>0</sub> = 7</span> м/с.</span></li><li><span class="ans-num">26</span><span class="ans-body"><span class="math">v<sub>0</sub> = 15</span> м/с, <span class="math">t = 20</span> с.</span></li><li><span class="ans-num">27</span><span class="ans-body"><span class="math">v<sub>0</sub> = 10</span> м/с, <span class="math">L = 125</span> м.</span></li></ol>
+</section>
+</article>
+<footer class="page-foot">
+<a href="../../index.html">← Все темы</a>
+<button class="link-btn" id="print-btn">Распечатать</button>
+</footer>
+<aside class="signature">
+<img class="sig-logo" src="../../assets/img/logo-mark.png" alt="" width="46" height="46">
+<div class="sig-text">
+  <span class="sig-name">INVARIANT</span>
+  <span class="sig-sub">Физика · материалы к занятиям</span>
+</div>
+</aside>
+</main>
+</div>
+<div class="scrim" id="scrim" hidden></div>
+<script src="../../assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ru" class="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Равномерное движение и средняя скорость — INVARIANT</title>
+<link rel="stylesheet" href="../../assets/fonts.css">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="icon" href="../../assets/img/logo-mark.png">
+<link rel="apple-touch-icon" href="../../assets/img/logo-mark.png">
+<meta name="theme-color" content="#0d1330">
+</head>
+<body>
+<header class="topbar">
+<button class="icon-btn menu-btn" id="menu-btn" aria-label="Открыть список тем" aria-expanded="false">☰</button>
+<a class="brand" href="../../index.html">
+  <img class="brand-logo" src="../../assets/img/logo-mark.png" alt="" width="34" height="34">
+  <span class="brand-text">INVARIANT<span class="brand-sub">Физика</span></span>
+</a>
+<div class="topbar-right">
+<button class="icon-btn" id="theme-btn" aria-label="Сменить оформление">◐</button>
+</div>
+</header>
+<div class="shell">
+<nav class="sidebar" id="sidebar" aria-label="Разделы">
+<div class="nav-inner">
+<label class="search-box">
+  <span class="search-icon" aria-hidden="true">⌕</span>
+  <input type="search" id="nav-search" placeholder="Поиск по темам" autocomplete="off" aria-label="Поиск по темам">
+</label>
+<div id="nav-list"><div class="nav-group"><h3>Кинематика</h3><ul><li><a href="../../t/kinematika/osnovnye-ponyatiya.html">Основные понятия кинематики</a></li><li><a href="../../t/kinematika/srednyaya-skorost.html" class="active">Равномерное движение и средняя скорость</a></li><li><a href="../../t/kinematika/ravnouskorennoe-dvizhenie.html">Равноускоренное движение</a></li><li><a href="../../t/kinematika/svobodnoe-padenie-i-krivolineynoe-dvizhenie.html">Свободное падение и криволинейное движение</a></li></ul></div></div>
+<p class="nav-empty" id="nav-empty" hidden>Ничего не нашлось</p>
+</div>
+</nav>
+<main class="content">
+<article class="topic">
+<p class="eyebrow">Кинематика</p>
+<h1>Равномерное движение и средняя скорость</h1>
+<p class="lede">Скорость как вектор, перевод единиц и две главные ловушки средней скорости.</p>
+<section class="theory"><h3 id="ravnomernoe-dvizhenie">Равномерное движение</h3><p><strong>Равномерное движение</strong> — движение, при котором тело за любые равные промежутки времени проходит одинаковые расстояния.</p><p>Короткая запись этого условия: <span class="math"><span class="m-vec">v</span> = const</span>.</p><p>Слова «за <strong>любые</strong> равные промежутки» здесь принципиальны. Если за первый час машина проехала 60 км и за второй час 60 км, движение ещё не обязательно равномерное: внутри часа она могла стоять в пробке, а потом гнать. Равномерное — значит и за любую минуту, и за любую секунду расстояния одинаковы.</p><h3 id="skorost">Скорость</h3><p><strong>Скорость</strong> — векторная величина, характеризующая быстроту перемещения тела в пространстве.</p><div class="math-block"><span class="m-vec">v</span> = <span class="m-frac"><span class="m-num">L</span><span class="m-den">t</span></span> <span class="m-gap"></span> L = <span class="m-vec">v</span> · t</div><p>Единица измерения — <span class="math"><span class="m-text">м/с</span></span>, в задачах часто <span class="math"><span class="m-text">км/ч</span></span>.</p><p>Раз скорость — вектор, у неё есть направление, и два тела с одинаковыми показаниями спидометра могут двигаться <strong>по-разному</strong>.</p><aside class="note"><p>Автомобиль на север со скоростью 40 км/ч и автомобиль на юг со скоростью 40 км/ч. Модули скоростей равны, но скорости различны — направления противоположны. Спидометр показывает только модуль. По нему нельзя отличить движение на север от движения на юг.</p></aside><h3 id="perevod-edinits">Перевод единиц</h3><p>Место, где теряется больше всего баллов. Запомни один множитель:</p><div class="math-block">1 <span class="m-text">м/с</span> = 3,6 <span class="m-text">км/ч</span></div><ul><li>из м/с в км/ч — <strong>умножаем</strong> на 3,6: <span class="math">15 · 3,6 = 54</span> км/ч</li><li>из км/ч в м/с — <strong>делим</strong> на 3,6: <span class="math">72 : 3,6 = 20</span> м/с</li></ul><p>Проверка на здравый смысл: в км/ч число всегда получается <strong>больше</strong>. Если после перевода в км/ч число уменьшилось — ты поделил вместо того, чтобы умножить.</p><h3 id="srednyaya-skorost-puti">Средняя скорость пути</h3><p><strong>Средняя скорость пути</strong> — это отношение всего пути ко всему времени движения:</p><div class="math-block"><span class="m-vec">v</span><sub>ср</sub> = <span class="m-frac"><span class="m-num"><span class="m-text">весь </span> L</span><span class="m-den"><span class="m-text">всё </span> t</span></span> = <span class="m-frac"><span class="m-num">L<sub>1</sub> + L<sub>2</sub> + … + L<sub>n</sub></span><span class="m-den">t<sub>1</sub> + t<sub>2</sub> + … + t<sub>n</sub></span></span></div><p><strong>Средняя скорость — это не среднее арифметическое скоростей.</strong> Это главная ошибка темы.</p><p>Что бы ни было в условии — считай полный путь, считай полное время, дели одно на другое. Формула не меняется никогда.</p><h3 id="dve-lovushki">Две ловушки</h3><p>Различать их надо по одному вопросу: <strong>что делят пополам — время или путь?</strong></p><p><strong>Половина времени.</strong> Половину времени тело двигалось со скоростью <span class="math">v<sub>1</sub></span>, половину — со скоростью <span class="math">v<sub>2</sub></span>. Здесь среднее арифметическое действительно работает:</p><div class="math-block">v<sub>ср</sub> = <span class="m-frac"><span class="m-num">v<sub>1</sub> + v<sub>2</sub></span><span class="m-den">2</span></span></div><p><strong>Половина пути.</strong> Половину пути со скоростью <span class="math">v<sub>1</sub></span>, половину — со скоростью <span class="math">v<sub>2</sub></span>. Здесь среднее арифметическое даёт <strong>неверный</strong> ответ:</p><div class="math-block">v<sub>ср</sub> = <span class="m-frac"><span class="m-num">2 v<sub>1</sub> v<sub>2</sub></span><span class="m-den">v<sub>1</sub> + v<sub>2</sub></span></span></div><p>Почему так: на медленном участке тело проводит <strong>больше времени</strong>, поэтому маленькая скорость «весит» больше и тянет среднюю вниз.</p><h3 id="pochemu-otvety-raznye-na-grafike">Почему ответы разные — на графике</h3><p>Возьмём одни и те же скорости: 12 км/ч и 4 км/ч. Построим график пути от времени. <strong>Средняя скорость — это наклон прямой, соединяющей начало и конец.</strong></p><figure class="fig">
+<svg viewBox="0 0 460 250" role="img" aria-label="Два графика пути от времени: при делении пополам времени средняя скорость 8 км/ч, при делении пополам пути — 6 км/ч">
+  <!-- график 1: делим пополам ВРЕМЯ -->
+  <g class="fig-line">
+    <line x1="30" y1="200" x2="30" y2="45"/>
+    <line x1="30" y1="200" x2="195" y2="200"/>
+  </g>
+  <polyline class="fig-line" points="30,200 105,125 180,100"/>
+  <line class="fig-accent" stroke-dasharray="5 4" x1="30" y1="200" x2="180" y2="100"/>
+  <line class="fig-line" stroke-dasharray="3 3" stroke-width="1" x1="105" y1="200" x2="105" y2="125"/>
+  <circle class="fig-fill" cx="105" cy="125" r="3.5"/>
+  <circle class="fig-fill-accent" cx="180" cy="100" r="4"/>
+  <text class="fig-t" x="24" y="38">L, км</text>
+  <text class="fig-t" x="196" y="216">t, ч</text>
+  <text class="fig-t fig-t-mid" x="105" y="216">1</text>
+  <text class="fig-t fig-t-mid" x="180" y="216">2</text>
+  <text class="fig-t fig-t-mid" x="112" y="240">пополам делим время</text>
+  <text class="fig-t fig-t-mid fig-t-accent" x="112" y="30">16 км за 2 ч → 8 км/ч</text>
+
+  <!-- график 2: делим пополам ПУТЬ -->
+  <g class="fig-line">
+    <line x1="270" y1="200" x2="270" y2="45"/>
+    <line x1="270" y1="200" x2="435" y2="200"/>
+  </g>
+  <polyline class="fig-line" points="270,200 308,125 420,50"/>
+  <line class="fig-accent" stroke-dasharray="5 4" x1="270" y1="200" x2="420" y2="50"/>
+  <line class="fig-line" stroke-dasharray="3 3" stroke-width="1" x1="270" y1="125" x2="308" y2="125"/>
+  <circle class="fig-fill" cx="308" cy="125" r="3.5"/>
+  <circle class="fig-fill-accent" cx="420" cy="50" r="4"/>
+  <text class="fig-t" x="264" y="38">L, км</text>
+  <text class="fig-t" x="436" y="216">t, ч</text>
+  <text class="fig-t fig-t-mid" x="308" y="216">1</text>
+  <text class="fig-t fig-t-mid" x="420" y="216">4</text>
+  <text class="fig-t fig-t-mid" x="352" y="240">пополам делим путь</text>
+  <text class="fig-t fig-t-mid fig-t-accent" x="352" y="30">24 км за 4 ч → 6 км/ч</text>
+</svg>
+<figcaption>Сплошная ломаная — реальное движение, пунктир — средняя скорость. Справа медленный участок длится 3 часа из 4, поэтому он сильнее тянет наклон вниз.</figcaption>
+</figure><p>Сравни два случая при одних и тех же скоростях:</p><div class="table-wrap"><table><thead><tr><th>Что делим пополам</th><th>Расчёт</th><th>Средняя скорость</th></tr></thead><tbody><tr><td>Время</td><td><span class="math"><span class="m-frac"><span class="m-num">12 + 4</span><span class="m-den">2</span></span></span></td><td>8 км/ч</td></tr><tr><td>Путь</td><td><span class="math"><span class="m-frac"><span class="m-num">2 · 12 · 4</span><span class="m-den">12 + 4</span></span></span></td><td>6 км/ч</td></tr></tbody></table></div><aside class="note"><p>Ответ по путям всегда меньше. Если у тебя получилось наоборот — перепутал случай.</p></aside><h3 id="kak-ne-zaputatsya">Как не запутаться</h3><p>Не заучивай формулу <span class="math"><span class="m-frac"><span class="m-num">2v<sub>1</sub>v<sub>2</sub></span><span class="m-den">v<sub>1</sub>+v<sub>2</sub></span></span></span> — её легко переврать. Вместо этого возьми удобное число.</p><p>Пусть весь путь <span class="math">L = 24</span> км (делится на обе скорости). На первую половину — 12 км при 12 км/ч — ушёл 1 час, на вторую — 12 км при 4 км/ч — 3 часа. Итого 24 км за 4 часа, значит 6 км/ч. Формула не понадобилась.</p><h3 id="gde-eto-vstrechaetsya-v-zhizni">Где это встречается в жизни</h3><ul><li><strong>Навигатор</strong> показывает среднюю скорость поездки. Постоял в пробке 20 минут — и средняя падает сильнее, чем кажется: стояние добавляет время, но не добавляет пути.</li><li><strong>Камеры «средней скорости» на трассе</strong> засекают время на въезде и выезде и делят длину участка на него. Разогнаться в конце, чтобы «отыграть» медленное начало, почти невозможно — это ровно случай половины пути.</li><li><strong>Метро против автобуса.</strong> Поезд едет 60 км/ч, но с учётом дороги до станции и ожидания средняя скорость поездки выходит около 25 км/ч. Поэтому «скорость транспорта» и «скорость поездки» — разные числа.</li></ul></section>
+<section class="tasks">
+<h2 class="section-head"><span class="section-kicker">Домашнее задание</span>
+<span class="task-count">12 задач</span></h2>
+<h3 class="task-group">Часть 1. Скорость равномерного движения</h3><article class="task"><div class="task-num">1</div><div class="task-body">Найдите скорости двух тел, если одно тело проходит 5,4 км за 6 мин, а другое проходит 27 км в противоположном направлении за 0,5 ч. Чем отличаются эти скорости?</div></article><article class="task"><div class="task-num">2</div><div class="task-body">Один автомобиль движется к востоку со скоростью 40 км/ч. Другой автомобиль — к югу с той же по величине скоростью. Можно ли сказать, что оба автомобиля движутся с одинаковыми скоростями?</div></article><article class="task"><div class="task-num">3</div><div class="task-body">Одно тело, двигаясь равномерно со скоростью 72 км/ч, в течение 10 с прошло такой же путь, какой другое тело прошло за 12,5 с. Определите скорость второго тела.</div></article><article class="task"><div class="task-num">4</div><div class="task-body">Двигаясь равномерно прямолинейно, тело за 10 с прошло 200 см. За сколько часов это тело, двигаясь с той же скоростью и в том же направлении, пройдёт путь 36 км?</div></article><h3 class="task-group">Часть 2. Средняя скорость</h3><article class="task"><div class="task-num">5</div><div class="task-body">Двигаясь по шоссе, велосипедист проехал 20 км за 40 мин, затем просёлочную дорогу длиной 600 м он преодолел за 2 мин, а оставшиеся 39 км 400 м по шоссе он проехал за 78 мин. Чему равна средняя скорость на всём пути?</div></article><article class="task"><div class="task-num">6</div><div class="task-body">Путь в 63 км от одной станции до другой электропоезд проходит за 1 ч 10 мин со средней скоростью движения 70 км/ч. Какое время занимают остановки?</div></article><article class="task"><div class="task-num">7</div><div class="task-body">Самоходная косилка имеет ширину захвата 10 м. Определите площадь поля, скошенного за 10 мин, если средняя скорость косилки 0,1 м/с.</div></article><article class="task"><div class="task-num">8</div><div class="task-body">Велосипедист первую половину времени при переезде из одного пункта в другой ехал со скоростью 12 км/ч, а вторую половину времени (из-за прокола шины) шёл пешком со скоростью 4 км/ч. Определите среднюю скорость движения велосипедиста.</div></article><article class="task"><div class="task-num">9</div><div class="task-body">Школьник проехал 1/3 всего времени на автобусе со скоростью 60 км/ч, ещё 1/3 всего времени на велосипеде со скоростью 20 км/ч, остальное время прошёл со скоростью 7 км/ч. Определите среднюю скорость движения школьника.</div></article><article class="task"><div class="task-num">10</div><div class="task-body">Велосипедист ехал из одного города в другой. Половину пути он проехал со скоростью 12 км/ч, а вторую половину (из-за прокола шины) шёл пешком со скоростью 4 км/ч. Определите среднюю скорость его движения.</div></article><article class="task"><div class="task-num">11</div><div class="task-body">Пешеход часть пути прошёл со скоростью 3 км/ч, затратив на это 2/3 времени своего движения. Оставшееся время он прошёл со скоростью 6 км/ч. Определите среднюю скорость.</div></article><article class="task"><div class="task-num">12</div><div class="task-body">Половину времени при переезде из одного пункта в другой автомобиль двигался с постоянной скоростью 60 км/ч. С какой постоянной скоростью он должен двигаться оставшееся время, если средняя скорость движения равна 65 км/ч?</div></article>
+</section>
+<section class="answers" id="otvety">
+<button class="answers-toggle" id="answers-toggle" aria-expanded="false" aria-controls="answers-body">
+  <span class="answers-label">Ответы</span>
+  <span class="answers-hint">Сначала реши сам — потом проверь</span>
+  <span class="chev" aria-hidden="true">▾</span>
+</button>
+<ol class="answers-list" id="answers-body" hidden><li><span class="ans-num">1</span><span class="ans-body">v₁ = 15 м/с = 54 км/ч; v₂ = 15 м/с = 54 км/ч. Модули скоростей одинаковы, но скорости различны: они направлены в противоположные стороны, а скорость — векторная величина.</span></li><li><span class="ans-num">2</span><span class="ans-body">Нет. Модули скоростей равны (40 км/ч), но направления разные (восток и юг), поэтому скорости не одинаковы.</span></li><li><span class="ans-num">3</span><span class="ans-body">v₂ = 16 м/с = 57,6 км/ч.</span></li><li><span class="ans-num">4</span><span class="ans-body">t = 500 ч.</span></li><li><span class="ans-num">5</span><span class="ans-body">vср = 30 км/ч.</span></li><li><span class="ans-num">6</span><span class="ans-body">Остановки занимают 16 мин.</span></li><li><span class="ans-num">7</span><span class="ans-body">S = 600 м².</span></li><li><span class="ans-num">8</span><span class="ans-body">vср = 8 км/ч. Случай половины времени: среднее арифметическое.</span></li><li><span class="ans-num">9</span><span class="ans-body">vср = 29 км/ч.</span></li><li><span class="ans-num">10</span><span class="ans-body">vср = 6 км/ч. Случай половины пути — сравни с задачей 8: те же скорости, но ответ меньше.</span></li><li><span class="ans-num">11</span><span class="ans-body">vср = 4 км/ч.</span></li><li><span class="ans-num">12</span><span class="ans-body">v₂ = 70 км/ч.</span></li></ol>
+</section>
+</article>
+<footer class="page-foot">
+<a href="../../index.html">← Все темы</a>
+<button class="link-btn" id="print-btn">Распечатать</button>
+</footer>
+<aside class="signature">
+<img class="sig-logo" src="../../assets/img/logo-mark.png" alt="" width="46" height="46">
+<div class="sig-text">
+  <span class="sig-name">INVARIANT</span>
+  <span class="sig-sub">Физика · материалы к занятиям</span>
+</div>
+</aside>
+</main>
+</div>
+<div class="scrim" id="scrim" hidden></div>
+<script src="../../assets/app.js"></script>
+</body>
+</html>

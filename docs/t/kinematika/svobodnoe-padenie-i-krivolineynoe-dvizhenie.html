@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ru" class="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Свободное падение и криволинейное движение — INVARIANT</title>
+<link rel="stylesheet" href="../../assets/fonts.css">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="icon" href="../../assets/img/logo-mark.png">
+<link rel="apple-touch-icon" href="../../assets/img/logo-mark.png">
+<meta name="theme-color" content="#0d1330">
+</head>
+<body>
+<header class="topbar">
+<button class="icon-btn menu-btn" id="menu-btn" aria-label="Открыть список тем" aria-expanded="false">☰</button>
+<a class="brand" href="../../index.html">
+  <img class="brand-logo" src="../../assets/img/logo-mark.png" alt="" width="34" height="34">
+  <span class="brand-text">INVARIANT<span class="brand-sub">Физика</span></span>
+</a>
+<div class="topbar-right">
+<button class="icon-btn" id="theme-btn" aria-label="Сменить оформление">◐</button>
+</div>
+</header>
+<div class="shell">
+<nav class="sidebar" id="sidebar" aria-label="Разделы">
+<div class="nav-inner">
+<label class="search-box">
+  <span class="search-icon" aria-hidden="true">⌕</span>
+  <input type="search" id="nav-search" placeholder="Поиск по темам" autocomplete="off" aria-label="Поиск по темам">
+</label>
+<div id="nav-list"><div class="nav-group"><h3>Кинематика</h3><ul><li><a href="../../t/kinematika/osnovnye-ponyatiya.html">Основные понятия кинематики</a></li><li><a href="../../t/kinematika/srednyaya-skorost.html">Равномерное движение и средняя скорость</a></li><li><a href="../../t/kinematika/ravnouskorennoe-dvizhenie.html">Равноускоренное движение</a></li><li><a href="../../t/kinematika/svobodnoe-padenie-i-krivolineynoe-dvizhenie.html" class="active">Свободное падение и криволинейное движение</a></li></ul></div></div>
+<p class="nav-empty" id="nav-empty" hidden>Ничего не нашлось</p>
+</div>
+</nav>
+<main class="content">
+<article class="topic">
+<p class="eyebrow">Кинематика</p>
+<h1>Свободное падение и криволинейное движение</h1>
+<p class="lede">Ускорение свободного падения, силы при падении тела и разложение криволинейного движения по осям x и y.</p>
+<section class="theory"><h3 id="uskorenie-svobodnogo-padeniya">Ускорение свободного падения</h3><p><strong>Ускорение свободного падения</strong> — ускорение, с которым любое тело падает на Землю под действием силы тяжести, если сопротивлением воздуха можно пренебречь.</p><div class="math-block">g ≈ 9,8 <span class="m-text">м/с</span><sup>2</sup></div><p>В задачах почти всегда округляют до <span class="math">g = 10 <span class="m-text">м/с</span><sup>2</sup></span> — так и считай, если в условии не сказано иначе.</p><p>Ключевое свойство: <span class="math"><span class="m-vec">g</span></span> <strong>одинаково для всех тел</strong>, независимо от массы. Лист бумаги падает медленнее камня не из-за разной величины <span class="math"><span class="m-vec">g</span></span>, а из-за сопротивления воздуха. В вакууме (или когда сопротивлением пренебрегают, как во всех задачах этой темы) перо и молоток падают одинаково.</p><h3 id="svobodnoe-padenie">Свободное падение</h3><p><strong>Свободное падение</strong> — движение тела только под действием силы тяжести, с начальной скоростью, равной нулю или направленной по вертикали.</p><p>Это равноускоренное движение (см. предыдущую тему), где роль ускорения играет <span class="math"><span class="m-vec">g</span></span>: все формулы равноускоренного движения работают без изменений, просто вместо <span class="math"><span class="m-vec">a</span></span> подставляешь <span class="math"><span class="m-vec">g</span></span>, вместо <span class="math"><span class="m-vec">S</span></span> — высоту <span class="math">h</span>.</p><div class="math-block"><span class="m-vec">v</span> = <span class="m-vec">v</span><sub>0</sub> + <span class="m-vec">g</span> t <span class="m-gap"></span> h = v<sub>0</sub> t + <span class="m-frac"><span class="m-num">g t<sup>2</sup></span><span class="m-den">2</span></span></div><figure class="fig">
+<svg viewBox="0 0 460 300" role="img" aria-label="Тело падает с высоты h: начальная скорость равна нулю, ускорение g направлено вниз и постоянно, скорость v в момент падения направлена вниз">
+  <defs>
+    <marker id="ar-fall-ax" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" class="fig-fill"/>
+    </marker>
+    <marker id="ar-fall-dim" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" class="fig-fill"/>
+    </marker>
+    <marker id="ar-fall-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" class="fig-fill-accent"/>
+    </marker>
+  </defs>
+
+  <line class="fig-line" x1="60" y1="280" x2="60" y2="30" marker-end="url(#ar-fall-ax)"/>
+  <text class="fig-t" x="46" y="26">y</text>
+  <line class="fig-line" x1="40" y1="270" x2="430" y2="270" marker-end="url(#ar-fall-ax)"/>
+  <text class="fig-t" x="438" y="266">x</text>
+
+  <g transform="translate(0,-8)">
+    <path class="fig-line" d="M50 270 l10 8 l10 -8" fill="none"/>
+  </g>
+
+  <circle class="fig-line" cx="230" cy="70" r="7"/>
+  <text class="fig-t" x="250" y="64">v₀ = 0</text>
+
+  <line class="fig-line" x1="230" y1="80" x2="230" y2="255" stroke-dasharray="4 4"/>
+
+  <line class="fig-line" x1="90" y1="270" x2="90" y2="77" marker-start="url(#ar-fall-dim)" marker-end="url(#ar-fall-dim)"/>
+  <text class="fig-t fig-t-mid" x="74" y="175">h</text>
+
+  <line class="fig-accent" x1="290" y1="110" x2="290" y2="230" marker-end="url(#ar-fall-a)"/>
+  <text class="fig-t fig-t-accent" x="308" y="175">g</text>
+
+  <circle class="fig-fill-accent" cx="230" cy="263" r="7"/>
+  <line class="fig-accent" x1="230" y1="195" x2="230" y2="253" marker-end="url(#ar-fall-a)"/>
+  <text class="fig-t fig-t-accent" x="200" y="225">v</text>
+
+  <line class="fig-line" x1="40" y1="270" x2="460" y2="270"/>
+  <line class="fig-line" x1="45" y1="278" x2="35" y2="270"/>
+  <line class="fig-line" x1="75" y1="278" x2="65" y2="270"/>
+  <line class="fig-line" x1="105" y1="278" x2="95" y2="270"/>
+</svg>
+<figcaption>Тело падает без начальной скорости с высоты h. Ускорение g постоянно и направлено вниз всё время падения, поэтому скорость v в момент удара о землю направлена туда же и больше нуля</figcaption>
+</figure><p>На тело в свободном падении действует только сила тяжести — сопротивлением воздуха пренебрегаем по условию. Поэтому единственный вектор ускорения на рисунке — это <span class="math"><span class="m-vec">g</span></span>, и он не меняется ни по модулю, ни по направлению от начала падения до самого приземления.</p><aside class="note"><p>Типичная ошибка: считать, что скорость растёт неравномерно, «быстрее к концу». Нет — ускорение постоянно, значит за <strong>любую</strong> секунду скорость увеличивается на одну и ту же величину, равную <span class="math">g</span>. Путь за секунду при этом растёт (потому что скорость к концу больше), а вот прирост скорости — нет.</p></aside><p><strong>Путь за n-ю секунду.</strong> Для тела, падающего с нулевой начальной скоростью, путь именно за n-ю секунду (не за первые n секунд, а за один конкретный промежуток между <span class="math">(n-1)</span>-й и n-й секундой) считается по формуле:</p><div class="math-block">L<sub>n</sub> = g ( n - <span class="m-frac"><span class="m-num">1</span><span class="m-den">2</span></span> )</div><p>Она получается как разность путей <span class="math">h(n) - h(n-1)</span>, где <span class="math">h(t) = <span class="m-frac"><span class="m-num">g t<sup>2</sup></span><span class="m-den">2</span></span></span>.</p><h3 id="krivolineynoe-dvizhenie">Криволинейное движение</h3><p><strong>Криволинейное движение</strong> — движение, траектория которого не прямая линия (парабола, окружность, любая кривая).</p><p>Прямо со скоростью-вектором вдоль кривой работать неудобно: направление <span class="math"><span class="m-vec">v</span></span> всё время меняется. Выход — <strong>рассматривать движение отдельно по каждой оси</strong>. Если оси <span class="math">x</span> и <span class="math">y</span> выбраны правильно (например, <span class="math">x</span> — горизонталь, <span class="math">y</span> — вертикаль), то вдоль каждой оси тело движется по своим, куда более простым законам: вдоль <span class="math">x</span> обычно равномерно, вдоль <span class="math">y</span> — равноускоренно с ускорением <span class="math">g</span>.</p><p>Классический пример — тело, брошенное под углом <span class="math">α</span> к горизонту со скоростью <span class="math">v<sub>0</sub></span>. Начальную скорость сразу раскладывают на составляющие:</p><div class="math-block">v<sub>0x</sub> = v<sub>0</sub> cos<span class="m-thin"></span>α <span class="m-gap"></span> v<sub>0y</sub> = v<sub>0</sub> sin<span class="m-thin"></span>α</div><p>По оси <span class="math">x</span> на тело ничего не действует (сопротивлением пренебрегаем), поэтому:</p><div class="math-block">v<sub>x</sub> = v<sub>0x</sub> = const <span class="m-gap"></span> x = v<sub>0x</sub> · t</div><p>По оси <span class="math">y</span> действует сила тяжести — движение равноускоренное, как в свободном падении, только с начальной скоростью <span class="math">v<sub>0y</sub></span>:</p><div class="math-block">v<sub>y</sub> = v<sub>0y</sub> - g t <span class="m-gap"></span> y = v<sub>0y</sub> · t - <span class="m-frac"><span class="m-num">g t<sup>2</sup></span><span class="m-den">2</span></span></div><p>Настоящая скорость тела в любой момент — это векторная сумма своих проекций, <strong>сложенных по правилу параллелограмма</strong> (см. предыдущую тему):</p><div class="math-block"><span class="m-vec">v</span> = <span class="m-vec">v</span><sub>x</sub> + <span class="m-vec">v</span><sub>y</sub> <span class="m-gap"></span> |<span class="m-vec">v</span>| = <span class="m-sqrt"><span class="m-radic">√</span><span class="m-rad">v<sub>x</sub><sup>2</sup> + v<sub>y</sub><sup>2</sup></span></span></div><figure class="fig">
+<svg viewBox="0 0 460 300" role="img" aria-label="Криволинейное движение тела, брошенного под углом: начальная скорость раскладывается на v0x и v0y, в произвольной точке траектории скорость v строится как сумма проекций vx и vy">
+  <defs>
+    <marker id="ar-cur-ax" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" class="fig-fill"/>
+    </marker>
+    <marker id="ar-cur-v0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" class="fig-fill"/>
+    </marker>
+    <marker id="ar-cur-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" class="fig-fill-accent"/>
+    </marker>
+    <marker id="ar-cur-dim" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" class="fig-fill"/>
+    </marker>
+  </defs>
+
+  <line class="fig-line" x1="60" y1="220" x2="60" y2="30" marker-end="url(#ar-cur-ax)"/>
+  <text class="fig-t" x="46" y="26">y</text>
+  <line class="fig-line" x1="40" y1="220" x2="440" y2="220" marker-end="url(#ar-cur-ax)"/>
+  <text class="fig-t" x="448" y="216">x</text>
+
+  <path class="fig-line" d="M60,220 Q245,20 430,220" fill="none" stroke-dasharray="5 4"/>
+
+  <line class="fig-line" x1="60" y1="220" x2="150" y2="140" marker-end="url(#ar-cur-v0)"/>
+  <text class="fig-t" x="78" y="150">v₀</text>
+  <path class="fig-line" d="M100 220 A 40 40 0 0 0 92 200"/>
+  <text class="fig-t" x="92" y="210">α</text>
+  <line class="fig-line" x1="60" y1="220" x2="150" y2="220" stroke-dasharray="3 3"/>
+  <text class="fig-t fig-t-mid" x="105" y="236">v₀ₓ</text>
+  <line class="fig-line" x1="150" y1="220" x2="150" y2="140" stroke-dasharray="3 3"/>
+  <text class="fig-t" x="158" y="180">v₀y</text>
+
+  <line class="fig-accent" x1="200" y1="55" x2="200" y2="90" marker-end="url(#ar-cur-a)"/>
+  <text class="fig-t fig-t-accent" x="216" y="78">g</text>
+
+  <line class="fig-line" x1="245" y1="45" x2="245" y2="220" stroke-dasharray="3 3"/>
+  <text class="fig-t fig-t-mid" x="228" y="130">h</text>
+
+  <circle class="fig-fill-accent" cx="345" cy="130" r="4"/>
+  <line class="fig-line" x1="345" y1="130" x2="410" y2="130" stroke-dasharray="3 3"/>
+  <text class="fig-t fig-t-mid" x="378" y="146">vₓ</text>
+  <line class="fig-line" x1="410" y1="130" x2="410" y2="190" stroke-dasharray="3 3"/>
+  <text class="fig-t" x="416" y="162">vy</text>
+  <line class="fig-accent" x1="345" y1="130" x2="410" y2="190" marker-end="url(#ar-cur-a)"/>
+  <text class="fig-t fig-t-accent" x="358" y="188">v</text>
+
+  <line class="fig-line" x1="60" y1="240" x2="430" y2="240" marker-start="url(#ar-cur-dim)" marker-end="url(#ar-cur-dim)"/>
+  <text class="fig-t fig-t-mid" x="245" y="256">S</text>
+  <text class="fig-t fig-t-mid" x="152" y="270">t₁</text>
+  <text class="fig-t fig-t-mid" x="337" y="270">t₂</text>
+</svg>
+<figcaption>Начальная скорость раскладывается на v₀ₓ и v₀y. Ось x тело проходит равномерно, ось y — равноускоренно с ускорением g. Скорость v в любой точке траектории — сумма текущих vₓ и vy</figcaption>
+</figure><p>Отсюда — стандартные величины для тела, брошенного под углом и упавшего на ту же высоту, с которой бросили:</p><div class="math-block">t<sub>подъёма</sub> = <span class="m-frac"><span class="m-num">v<sub>0</sub> sin<span class="m-thin"></span>α</span><span class="m-den">g</span></span> <span class="m-gap"></span> H = <span class="m-frac"><span class="m-num">(v<sub>0</sub>sin<span class="m-thin"></span>α)<sup>2</sup></span><span class="m-den">2g</span></span> <span class="m-gap"></span> τ<sub>полёта</sub> = <span class="m-frac"><span class="m-num">2 v<sub>0</sub> sin<span class="m-thin"></span>α</span><span class="m-den">g</span></span> <span class="m-gap"></span> S = v<sub>0x</sub> · τ<sub>полёта</sub></div><p>Частный случай криволинейного движения — бросок <strong>вертикально вверх</strong>: там <span class="math">α = 90°</span>, горизонтальной составляющей нет вообще, и всё сводится к обычному равноускоренному движению вдоль одной оси, только «вверх» — это направление против <span class="math"><span class="m-vec">g</span></span>.</p><aside class="note"><p>Типичная ошибка: считать, что скорость <strong>вдоль оси x</strong> тоже уменьшается, раз тело «тормозит» на подъёме. Нет — тормозит только вертикальная составляющая, потому что только на неё действует <span class="math"><span class="m-vec">g</span></span>. Горизонтальная составляющая постоянна на всём полёте, включая верхнюю точку.</p></aside><aside class="note"><p>Ещё одна: путать время подъёма и время всего полёта. Время подъёма — это когда <span class="math">v<sub>y</sub> = 0</span> (верхняя точка). Если старт и финиш на одной высоте, полное время полёта ровно вдвое больше времени подъёма; если нет — считай подъём и спуск отдельно, по разным высотам.</p></aside><h3 id="proverka-na-zdravyy-smysl">Проверка на здравый смысл</h3><ul><li>В верхней точке траектории броска под углом скорость <strong>не равна нулю</strong> (в отличие от вертикального броска) — она равна горизонтальной составляющей <span class="math">v<sub>0x</sub></span>. Равна нулю там только вертикальная составляющая.</li><li>Скорость при возврате на ту же высоту, с которой бросили, по модулю равна начальной, а направлена симметрично вниз — как в вертикальном броске, но под тем же углом <span class="math">α</span> к горизонту.</li><li>Прирост скорости свободного падения за секунду всегда один и тот же (<span class="math">g</span>), независимо от того, какая это по счёту секунда. Если ответ в задаче зависит от номера секунды — это либо путь, либо полная скорость к этому моменту, а не прирост за секунду.</li><li>Дальность полёта максимальна при <span class="math">α = 45°</span>. Если в задаче с равными <span class="math">v<sub>0</sub></span> увеличение угла от 30° к 45° уменьшило дальность — где-то ошибка в подстановке.</li></ul><h3 id="gde-eto-vstrechaetsya-v-zhizni">Где это встречается в жизни</h3><ul><li><strong>Прыжок в воду с вышки.</strong> Пока пловец не коснулся воды, это почти свободное падение: за первую секунду он пролетает меньше, чем за последнюю, хотя ускорение всё время одно и то же.</li><li><strong>Баскетбольный или футбольный мяч</strong>, брошенный по дуге, — классическое криволинейное движение: по горизонтали мяч летит равномерно, по вертикали — то поднимается, то падает с ускорением <span class="math">g</span>.</li><li><strong>Струя воды в фонтане</strong> или из шланга, направленного под углом, вычерчивает ту же параболу, что и брошенное тело, — по тем же формулам.</li><li><strong>Пушечное ядро и артиллерия.</strong> Именно на задаче о дальности выстрела исторически строилась вся баллистика — формула <span class="math">S = <span class="m-frac"><span class="m-num">v<sub>0</sub><sup>2</sup> sin<span class="m-thin"></span> 2α</span><span class="m-den">g</span></span></span> была выведена задолго до появления пушек с электроникой.</li></ul></section>
+<section class="tasks">
+<h2 class="section-head"><span class="section-kicker">Домашнее задание</span>
+<span class="task-count">8 задач</span></h2>
+<h3 class="task-group">Часть 1. Свободное падение</h3><article class="task"><div class="task-num">1</div><div class="task-body">Тело свободно падает с нулевой начальной скоростью. Сопротивление воздуха пренебрежимо мало. На сколько увеличится скорость падения тела за пятую секунду от начала движения? Ответ дайте в м/с.</div></article><article class="task"><div class="task-num">2</div><div class="task-body">Тело свободно падает по вертикали с нулевой начальной скоростью в течение 5 с. Сопротивление воздуха пренебрежимо мало. Какой путь пройдёт тело за вторую секунду от начала движения? Ответ дайте в метрах.</div></article><article class="task"><div class="task-num">3</div><div class="task-body">Тело свободно падает по вертикали с нулевой начальной скоростью в течение 5 с. Сопротивление воздуха пренебрежимо мало. Какой путь пройдёт тело за третью секунду от начала движения? Ответ дайте в метрах.</div></article><h3 class="task-group">Часть 2. Криволинейное движение</h3><article class="task"><div class="task-num">4</div><div class="task-body">Симба бросает свою любимую игрушку под углом <span class="math">α = 30°</span> к горизонту с поверхности пола. Через время <span class="math">τ = 2</span> с она падает обратно на пол. Определите дальность полёта игрушки. Сопротивлением воздуха пренебречь.</div></article><article class="task"><div class="task-num">5</div><div class="task-body">Тело брошено с поверхности земли под углом <span class="math">α = 30°</span> к горизонту со скоростью <span class="math">v<sub>0</sub> = 20</span> м/с. Пренебрегая сопротивлением воздуха, определите скорость (модуль и направление) и координаты тела на осях <span class="math">Ox</span> и <span class="math">Oy</span> через время <span class="math">t = 1,5</span> с после начала движения.</div></article><article class="task"><div class="task-num">6</div><div class="task-body">Тело брошено с поверхности Земли вертикально вверх с начальной скоростью <span class="math">v<sub>0</sub> = 20</span> м/с. Найти: 1) максимальную высоту подъёма; 2) время подъёма; 3) скорость в момент падения. Сопротивление воздуха не учитывать.</div></article><article class="task"><div class="task-num">7</div><div class="task-body">Шарик бросают вертикально вверх со скоростью <span class="math">v<sub>0</sub> = 5</span> м/с. Пролетев расстояние <span class="math">h = 1,05</span> м, он упруго ударяется о потолок и падает вниз. Через какое время <span class="math">τ</span> после начала движения шарик упадёт на пол, если расстояние от пола до потолка <span class="math">H = 2,25</span> м?</div></article><article class="task"><div class="task-num">8</div><div class="task-body">Плоский склон холма образует угол <span class="math">α = 30°</span> с горизонтом. Мяч, брошенный с поверхности склона в горизонтальном направлении «вниз» по склону, через <span class="math">τ = 0,5</span> с движется со скоростью <span class="math">v<sub>1</sub> = 13</span> м/с (<span class="math">g = 10 <span class="m-text">м/с</span><sup>2</sup></span>). Сопротивлением воздуха пренебречь. 1) Найдите начальную скорость <span class="math">v<sub>0</sub></span> мяча. 2) Через какое время <span class="math">t<sub>1</sub></span> после старта мяч находился на максимальном расстоянии от поверхности склона? 3) На каком максимальном расстоянии <span class="math">H</span> от поверхности склона находился мяч в этот момент?</div></article>
+</section>
+<section class="answers" id="otvety">
+<button class="answers-toggle" id="answers-toggle" aria-expanded="false" aria-controls="answers-body">
+  <span class="answers-label">Ответы</span>
+  <span class="answers-hint">Сначала реши сам — потом проверь</span>
+  <span class="chev" aria-hidden="true">▾</span>
+</button>
+<ol class="answers-list" id="answers-body" hidden><li><span class="ans-num">1</span><span class="ans-body">10 м/с. За любую секунду свободного падения скорость увеличивается на одну и ту же величину <span class="math">g</span> — номер секунды здесь не важен, это не путь, а именно прирост скорости.</span></li><li><span class="ans-num">2</span><span class="ans-body">15 м. <span class="math">L<sub>n</sub> = g(n - <span class="m-frac"><span class="m-num">1</span><span class="m-den">2</span></span>)</span>, при <span class="math">n=2</span>: <span class="math">L<sub>2</sub> = 10 · 1,5 = 15</span> м.</span></li><li><span class="ans-num">3</span><span class="ans-body">25 м. <span class="math">L<sub>3</sub> = g(3 - <span class="m-frac"><span class="m-num">1</span><span class="m-den">2</span></span>) = 10 · 2,5 = 25</span> м.</span></li><li><span class="ans-num">4</span><span class="ans-body">Из времени полёта находим начальную скорость: <span class="math">τ = <span class="m-frac"><span class="m-num">2v<sub>0</sub>sin<span class="m-thin"></span>α</span><span class="m-den">g</span></span> ⇒ v<sub>0</sub> = <span class="m-frac"><span class="m-num">τ g</span><span class="m-den">2sin<span class="m-thin"></span>α</span></span> = <span class="m-frac"><span class="m-num">2 · 10</span><span class="m-den">2 · 0,5</span></span> = 20</span> м/с. Дальность: <span class="math">S = v<sub>0</sub>cos<span class="m-thin"></span>α · τ = 20 · 0,866 · 2 ≈ 34,6</span> м.</span></li><li><span class="ans-num">5</span><span class="ans-body"><span class="math">v<sub>x</sub> = v<sub>0</sub>cos<span class="m-thin"></span>α = 20 · 0,866 ≈ 17,3</span> м/с (не меняется). <span class="math">v<sub>y</sub> = v<sub>0</sub>sin<span class="m-thin"></span>α - gt = 10 - 15 = -5</span> м/с — знак минус значит, что тело уже падает вниз. Модуль скорости <span class="math">v = <span class="m-sqrt"><span class="m-radic">√</span><span class="m-rad">17,3<sup>2</sup>+5<sup>2</sup></span></span> ≈ 18,0</span> м/с, направлена примерно на 16° ниже горизонта. Координаты: <span class="math">x = v<sub>0</sub>cos<span class="m-thin"></span>α · t ≈ 26,0</span> м; <span class="math">y = v<sub>0</sub>sin<span class="m-thin"></span>α · t - <span class="m-frac"><span class="m-num">gt<sup>2</sup></span><span class="m-den">2</span></span> = 15 - 11,25 = 3,75</span> м.</span></li><li><span class="ans-num">6</span><span class="ans-body">1) <span class="math">H = <span class="m-frac"><span class="m-num">v<sub>0</sub><sup>2</sup></span><span class="m-den">2g</span></span> = <span class="m-frac"><span class="m-num">400</span><span class="m-den">20</span></span> = 20</span> м. 2) <span class="math">t = <span class="m-frac"><span class="m-num">v<sub>0</sub></span><span class="m-den">g</span></span> = 2</span> с. 3) При возврате на ту же высоту модуль скорости равен начальному: <span class="math">v = 20</span> м/с, направлена вниз.</span></li><li><span class="ans-num">7</span><span class="ans-body">До удара о потолок: <span class="math">h = v<sub>0</sub>t<sub>1</sub> - <span class="m-frac"><span class="m-num">gt<sub>1</sub><sup>2</sup></span><span class="m-den">2</span></span></span>, откуда <span class="math">t<sub>1</sub> = 0,3</span> с (корень до вершины траектории), скорость в этот момент <span class="math">v<sub>1</sub> = v<sub>0</sub> - gt<sub>1</sub> = 2</span> м/с, ещё вверх. После упругого удара скорость меняет знак: <span class="math">2</span> м/с вниз с высоты <span class="math">H</span>. Падение до пола: <span class="math">H = v<sub>1</sub>t<sub>2</sub> + <span class="m-frac"><span class="m-num">gt<sub>2</sub><sup>2</sup></span><span class="m-den">2</span></span> ⇒ t<sub>2</sub> = 0,5</span> с. Итого <span class="math">τ = t<sub>1</sub>+t<sub>2</sub> = 0,8</span> с.</span></li><li><span class="ans-num">8</span><span class="ans-body">1) Бросок горизонтальный, значит <span class="math">v<sub>0</sub></span> — это горизонтальная составляющая, она не меняется: <span class="math">v<sub>1</sub><sup>2</sup> = v<sub>0</sub><sup>2</sup> + (gτ)<sup>2</sup> ⇒ v<sub>0</sub> = <span class="m-sqrt"><span class="m-radic">√</span><span class="m-rad">13<sup>2</sup> - 5<sup>2</sup></span></span> = 12</span> м/с. 2) Раскладывая движение по осям вдоль склона и перпендикулярно ему, расстояние от склона растёт, пока скорость вдоль этой оси не станет равной нулю: <span class="math">t<sub>1</sub> = <span class="m-frac"><span class="m-num">v<sub>0</sub>tg<span class="m-thin"></span>α</span><span class="m-den">g</span></span> ≈ 0,7</span> с. 3) Максимальное расстояние в этот момент: <span class="math">H ≈ 2,1</span> м.</span></li></ol>
+</section>
+</article>
+<footer class="page-foot">
+<a href="../../index.html">← Все темы</a>
+<button class="link-btn" id="print-btn">Распечатать</button>
+</footer>
+<aside class="signature">
+<img class="sig-logo" src="../../assets/img/logo-mark.png" alt="" width="46" height="46">
+<div class="sig-text">
+  <span class="sig-name">INVARIANT</span>
+  <span class="sig-sub">Физика · материалы к занятиям</span>
+</div>
+</aside>
+</main>
+</div>
+<div class="scrim" id="scrim" hidden></div>
+<script src="../../assets/app.js"></script>
+</body>
+</html>
